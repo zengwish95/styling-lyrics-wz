@@ -1,10 +1,57 @@
+/* GLOBAL ELEMENTS */
+@font-face {
+  font-family: "lyon-reg";
+  src: url("../fonts/LyonText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "lyon-italic";
+  src: url("../fonts/LyonText-RegularItalic.woff") format("woff");
+}
 html {
   font-size: 20px;
   background-color: #001528;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 nav {
   text-align: left;
   padding-left: 15vw;
   padding-top: 20px;
-  color: #ffffff;
+  color: white;
+  background: #2f0e37;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* .col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  min-height: 175px;
+} */
+
+h1 {
+  font-family: lyon-reg, georgia, serif;
+  font-size: 3rem ;
+  line-height: 10px;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-family: lyon-reg, georgia, serif;
+  font-size: 1rem ;
+  letter-spacing: -0.5px;
+}
+p {
+  color: white;
+  padding: 10px 100px 20px 15vw;
+  line-height: 4rem;
+  font-family: lyon-italic, georgia, serif;
+  letter-spacing: 0.75px;
 }
