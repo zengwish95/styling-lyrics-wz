@@ -1,12 +1,12 @@
 /* GLOBAL ELEMENTS */
-@font-face {
+/* @font-face {
   font-family: "lyon-reg";
   src: url("../fonts/LyonText-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "lyon-italic";
   src: url("../fonts/LyonText-RegularItalic.woff") format("woff");
-}
+} */
 html {
   font-size: 20px;
   background-color: #001528;
@@ -26,10 +26,10 @@ nav {
   left: 0;
   right: 0;
 }
-.content-wrap {
+/* .content-wrap {
   max-width: 800px;
-  margin: 0 auto;
-}
+  margin: 0 10vw;
+} */
 /* .col-wide {
   width: 70%;
   float: left;
@@ -38,20 +38,26 @@ nav {
 } */
 
 h1 {
-  font-family: lyon-reg, georgia, serif;
-  font-size: 3rem ;
+  font-family: interstate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem ;
   line-height: 10px;
-  letter-spacing: -0.5px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 h3 {
-  font-family: lyon-reg, georgia, serif;
-  font-size: 1rem ;
-  letter-spacing: -0.5px;
+  font-family: calluna, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
 }
 p {
   color: white;
-  padding: 10px 100px 20px 15vw;
-  line-height: 4rem;
-  font-family: lyon-italic, georgia, serif;
+  padding: 100px 100px 20px 15vw;
+  line-height: 8rem;
+  font-family: calluna, serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 0.75px;
 }
