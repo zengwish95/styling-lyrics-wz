@@ -1,12 +1,12 @@
 /* GLOBAL ELEMENTS */
-/* @font-face {
-  font-family: "lyon-reg";
-  src: url("../fonts/LyonText-Regular.woff") format("woff");
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-@font-face {
-  font-family: "lyon-italic";
-  src: url("../fonts/LyonText-RegularItalic.woff") format("woff");
-} */
 html {
   font-size: 20px;
   background-color: #001528;
@@ -16,9 +16,8 @@ html {
   box-sizing: inherit;
 }
 nav {
-  text-align: left;
   padding-left: 15vw;
-  padding-top: 20px;
+  padding-top: 50px;
   color: white;
   background: #2f0e37;
   position: fixed;
@@ -41,23 +40,27 @@ h1 {
   font-family: interstate, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.25rem ;
-  line-height: 10px;
-  letter-spacing: 10px;
+  font-size: 1.75rem ;
+  line-height: 3rem;
+  letter-spacing: 15px;
   text-transform: uppercase;
 }
 h3 {
   font-family: calluna, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  padding-bottom: 25px;
 }
 p {
   color: white;
-  padding: 100px 100px 20px 15vw;
+  background-color: blue;
+  padding: 10px 50px 10px 15vw;
   line-height: 8rem;
   font-family: calluna, serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1.25rem;
   letter-spacing: 0.75px;
+  border: 1px solid red;
 }
