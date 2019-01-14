@@ -17,7 +17,7 @@ html {
 }
 nav {
   padding-left: 15vw;
-  padding-top: 80px;
+  padding-top: 120px;
   color: white;
   position: fixed;
   top: 0;
@@ -25,11 +25,7 @@ nav {
   right: 0;
   background-color: #2f0e37;
   background-image:
-  linear-gradient(
-        to right,
-        #2f0e37,
-        #021536
-      );
+  linear-gradient(to right, #2f0e37, #021536);
 }
 a:any-link {
   text-decoration: none;
@@ -37,6 +33,7 @@ a:any-link {
 }
 a:hover {
   text-decoration: underline;
+  color: #a5f0f7;
 }
 /* .content-wrap {
   max-width: 800px;
@@ -49,7 +46,7 @@ a:hover {
   min-height: 175px;
 } */
 .header-block {
-  height: 210px;
+  height: 240px;
   background-color: #2f0e37;
   background: linear-gradient(-90deg, #021536, #021536, #2f0e37, #d00037, #021536, #2f0e37, #a5f0f7, #2f0e37, #021536, #021536);
 	background-size: 400% 800%;
@@ -91,17 +88,20 @@ _________________________________________________*/
 .gradient-action1 {
   background-color: #2f0e37;
   background: linear-gradient(to right, #2f0e37, #2f0e37, #2f0e37, #d00037);
-  transition: 0.75s ease-in-out;
+  height: 182px;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+}
+.gradient-action1:hover {
+  background-color: #d00037;
+  background: linear-gradient(to right, #2f0e37, #d00037);
+  height: 262px;
 }
 .gradient-action2 {
   background-color: #2f0e37;
   background: linear-gradient(90deg, #021536, #021536, #315461, #2f0e37, #021536);
   background-size: 200% 200%;
-  animation: header-gradient 30s ease infinite;
-}
-.gradient-action1:hover {
-  background-color: #d00037;
-  background: linear-gradient(to right, #2f0e37, #d00037);
+  animation: header-gradient 36s ease infinite;
 }
 .gradient-regular {
   background-color: #2f0e37;
