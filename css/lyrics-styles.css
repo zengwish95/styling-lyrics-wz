@@ -50,7 +50,7 @@ a:hover {
   background-color: #2f0e37;
   background: linear-gradient(-90deg, #021536, #021536, #2f0e37, #d00037, #021536, #2f0e37, #a5f0f7, #2f0e37, #021536, #021536);
 	background-size: 400% 800%;
-	animation: header-gradient 15s ease infinite;
+	animation: header-gradient 15s ease infinite normal;
 }
 h1 {
   color: white;
