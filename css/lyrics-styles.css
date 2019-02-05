@@ -6,6 +6,7 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
 }
 html {
   font-size: 20px;
@@ -30,9 +31,11 @@ nav {
 a:any-link {
   text-decoration: none;
   color: white;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #a5f0f7;
 }
 /* .content-wrap {
@@ -46,14 +49,14 @@ a:hover {
   min-height: 175px;
 } */
 .header-block {
-  height: 240px;
+  height: 232px;
   background-color: #2f0e37;
   background: linear-gradient(-90deg, #021536, #021536, #2f0e37, #d00037, #021536, #2f0e37, #a5f0f7, #2f0e37, #021536, #021536);
 	background-size: 400% 800%;
 	animation: header-gradient 15s ease infinite normal;
 }
 h1 {
-  color: white;
+  color: #e4e4e4;
   font-family: interstate, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -71,7 +74,7 @@ h3 {
   padding-bottom: 25px;
 }
 p {
-  color: white;
+  color: #e4e4e4;
   background-color: blue;
   padding: 10px 50px 10px 15vw;
   line-height: 8rem;
@@ -82,20 +85,24 @@ p {
   letter-spacing: 0.75px;
   /* border: 1px solid magenta; */
 }
-
+.empty {
+	background-color: #d00037;
+	display: inline-block;
+	width: 100px;
+}
 /* GRADIENT BARS:
 _________________________________________________*/
 .gradient-action1 {
   background-color: #2f0e37;
   background: linear-gradient(to right, #2f0e37, #2f0e37, #2f0e37, #d00037);
-  height: 182px;
-  -webkit-transition-duration: 2s;
-  transition-duration: 2s;
+}
+.gradient-action1r {
+  background-color: #2f0e37;
+  background: linear-gradient(to left, #2f0e37, #2f0e37, #2f0e37, #d00037);
 }
 .gradient-action1:hover {
   background-color: #d00037;
   background: linear-gradient(to right, #2f0e37, #d00037);
-  height: 262px;
 }
 .gradient-action2 {
   background-color: #2f0e37;
@@ -103,18 +110,53 @@ _________________________________________________*/
   background-size: 200% 200%;
   animation: header-gradient 36s ease infinite;
 }
-.gradient-regular {
+.gradient-action3 {
+  background-color: #2f0e37;
+  background: linear-gradient(90deg, #d00037, #d00037, #2f0e37, #2f0e37, #d00037);
+  background-size: 200% 200%;
+  animation: header-gradient 5s ease infinite;
+}
+.gradient-action4 {
+  background-color: #2f0e37;
+  background: linear-gradient(90deg, #a5f0f7, #021536, #2f0e37, #a5f0f7, #021536);
+  background-size: 200% 200%;
+  animation: header-gradient 10s ease infinite;
+}
+.gradient-action5 {
+  background-color: #2f0e37;
+  background: linear-gradient(90deg, #021536, #021536, #2f0e37, #021536, #2f0e37);
+  background-size: 200% 200%;
+  animation: header-gradient 5s ease infinite;
+}
+.gradient-1 {
   background-color: #2f0e37;
   background: linear-gradient(90deg, #021536, #2f0e37, #2f0e37);
 }
-.gradient-reverse {
+.gradient-1r {
   background-color: #2f0e37;
   background: linear-gradient(-90deg, #021536, #2f0e37);
 }
-.highlight-bar {
+.gradient-2 {
+	background: rgb(47,14,55);
+	background: linear-gradient(-90deg, rgba(47,14,55,1) 0%, rgba(0,21,40,1) 43%, rgba(0,21,54,1) 100%);
+}
+.gradient-2r {
+	background: rgb(47,14,55);
+	background: linear-gradient(90deg, rgba(47,14,55,1) 0%, rgba(0,21,40,1) 43%, rgba(0,21,54,1) 100%);
+}
+.highlight-1 {
   height: 15px;
   background-color: #2f0e37;
   background: linear-gradient(to right, #2f0e37, #2f0e37, #a5f0f7);
+}
+.highlight-2 {
+  height: 15px;
+  background-color: #2f0e37;
+  background: linear-gradient(to left, #021536, #021536, #a5f0f7);
+}
+::selection {
+	background: #a5f0f7;
+	color: #021536;
 }
 /* GRADIENT ANIMATIONS:
 _________________________________________________*/
@@ -129,4 +171,12 @@ _________________________________________________*/
 		background-position: 0% 50%
 	}
   animation-fill-mode:
+}
+
+/* S screen size */
+@media screen and (max-width: 699px) {
+	html {
+	  font-size: 14px;
+		min-width: 320px;
+	}
 }
